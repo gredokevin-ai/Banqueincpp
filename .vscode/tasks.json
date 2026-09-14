@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "g++ build all cpp files",
+            "command": "g++",
+            "args": [
+                "-g",
+                "-std=c++17",
+                "-Wall",
+                "-Wextra",
+                // Sélectionne TOUS les fichiers .cpp du dossier
+                "${fileDirname}/*.cpp",
+                "-o",
+                // Nom de l'exécutable généré (porte le nom du dossier)
+                "${fileDirname}/${folderBasename}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

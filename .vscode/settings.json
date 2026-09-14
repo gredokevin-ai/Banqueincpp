@@ -1,0 +1,16 @@
+{
+    // Formatage automatique à la sauvegarde
+    "editor.formatOnSave": true,
+    // Taille de l'indentation (4 espaces)
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    // Nettoyage automatique des fins de ligne
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    // Formateur par défaut pour C++
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
